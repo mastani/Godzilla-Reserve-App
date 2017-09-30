@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="false"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/fr_user_area"/>
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/fr_username"
+        android:hint="شماره دانشجویی"
+        android:maxLines="1"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtUsername"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="20dp"
+        android:drawableRight="@mipmap/fr_password"
+        android:hint="کلمه عبور"
+        android:textSize="14sp"/>
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/captchaImageView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/txtPassword"/>
+
+    <EditText
+        android:id="@+id/txtCaptcha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/captchaImageView"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:width="200dp"
+        android:drawablePadding="20dp"
+        android:drawableRight="@mipmap/fr_captcha"
+        android:hint="کد امنیتی"
+        android:textSize="14sp"/>
+
+    <com.dd.processbutton.iml.ActionProcessButton
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCaptcha"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="13dp"
+        android:text="ورود"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        custom:pb_colorComplete="@color/green_complete"
+        custom:pb_colorError="@color/red_error"
+        custom:pb_colorNormal="@color/blue_normal"
+        custom:pb_colorPressed="@color/blue_pressed"
+        custom:pb_colorProgress="@color/purple_progress"
+        custom:pb_textComplete="با موفقیت وارد شدید"
+        custom:pb_textError="تلاش مجدد"
+        custom:pb_textProgress="در حال ورود"/>
+
+</RelativeLayout>

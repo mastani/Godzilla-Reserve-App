@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">گودزیلا رزرو :)</string>
+
+    <string name="reserve">رزرو غذا</string>
+    <string name="charge">افزایش اعتبار</string>
+
+    <string name="error_internet">خطا در اتصال به اینترنت</string>
+
+    <string-array name="intro">
+        <item>لورم ایپسوم متن ساختگی با تولید سادگی نا مفهوم از صنعت</item>
+        <item>ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</item>
+        <item>هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته</item>
+    </string-array>
 </resources>
